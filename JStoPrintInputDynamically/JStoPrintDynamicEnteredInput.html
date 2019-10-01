@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>
+        Hi
+    </title>
+    <script type="text/javascript">
+	function myFunction() {
+		var name=document.getElementById("inp1");
+		var nameplacer=document.getElementById("p1");
+		if (name.value.match(/\S+/) != null)
+			nameplacer.innerHTML="Hello "+name.value+"!!";
+		else
+			nameplacer.innerHTML="Welcome!!";
+	}
+</script>
+</head>
+<body>
+<p id = "p1">Welcome!!</p>
+<input type="text" onkeyup="myFunction()" id="inp1">
+</body>
+</html>
