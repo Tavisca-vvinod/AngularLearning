@@ -7,7 +7,7 @@
     </script>
 </head>
 <body>
-<div ng-app="myApp"  ng-controller="myCtrl">
+<div ng-app="" ng-init="firstName=''" ng-init="lastName=''">
 
     First Name: <input type="text" ng-model="firstName"><br>
     Last Name: <input type="text" ng-model="lastName"><br>
@@ -15,14 +15,6 @@
     Full Name: {{firstName + " " + lastName}}
 
 </div>
-
-<script>
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
-    $scope.firstName= "";
-    $scope.lastName= "";
-});
-</script>
 
 </body>
 </html>
