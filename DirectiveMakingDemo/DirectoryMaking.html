@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>
+        Hi
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+    </script>
+</head>
+<body>
+<div ng-app="myApp" varsha-test-directive></div>
+<script>
+    var app=angular.module("myApp",[]);
+    app.directive("varshaTestDirective",function(){
+        return {
+        template : "Its inside!!"
+        };
+        });
+</script>
+
+</body>
+</html>
